@@ -86,7 +86,11 @@
          '[adzerk.boot-reload :refer [reload]]
          '[deraen.boot-sass :refer [sass]]
          '[com.stuartsierra.component :as component]
-         'clojure.tools.namespace.repl)
+         'clojure.tools.namespace.repl
+         'boot.lein)
+
+;; Generates project.clj to help work with Intellij Idea
+(boot.lein/generate)
 
 (def repl-port 5600)
 
