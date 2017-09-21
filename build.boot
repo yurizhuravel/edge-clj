@@ -53,6 +53,9 @@
    ;; Needed for start-repl in cljs repl
    [com.cemerick/piggieback "0.2.2" :scope "test"]
 
+   ;;Lein generate to make it work with Cursive
+   [onetom/boot-lein-generate "0.1.3" :scope "test"]
+
    ;; Server deps
    [aero "1.1.2"]
    [bidi "2.1.1"]
