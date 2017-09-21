@@ -15,11 +15,12 @@
      {:get
       {:produces
        {:media-type "text/plain"
-        :language #{"en" "zh-ch;q=0.9"}}
+        :language #{"en" "zh-ch;q=0.9" "ru"}}
        :response
        #(case (yada/language %)
           "zh-ch" "你好世界\n"
-          "en" "Hello World!\n")}}})])
+          "en" "Hello World!\n"
+          "ru" "Всем привет\n")}}})])
 
 (defn hello-atom []
   ["/hello-atom"
